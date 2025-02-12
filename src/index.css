@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, :root {
+    background-color: #1f1f1f;
+    height: 100%;
+}
+
+@layer utilities {
+
+    .custom-scrollbar::-webkit-scrollbar {
+        height: 8px; /* Thinner scrollbar */
+      }
+      
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background-color: #347136; /* Green color for thumb */
+        border-radius: 10px; /* Rounded thumb */
+      }
+      
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background-color: #2c2c2c; /* Light gray track */
+        border-radius: 10px; /* Rounded track */
+      }
+      
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background-color: #254e26;
+        cursor: grabbing;
+      }
+}
