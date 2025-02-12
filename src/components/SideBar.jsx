@@ -40,25 +40,25 @@ const SideBar = () => {
 
                     <div className='mx-6 bg-[#1f1f1f] font-semibold'>
                         <div className='py-4 px-6'>
-                            <div className='flex items-center my-5 gap-2'>
+                            <a href='/' className='flex items-center my-5 gap-2'>
                                 <PiClipboardText className='text-2xl' /><h1>All Tasks</h1>
-                            </div>
+                            </a>
 
-                            <div className='flex items-center my-5 gap-2'>
+                            <a href='/today' className='flex items-center my-5 gap-2'>
                                 <CiCalendar className='text-2xl' /><h1>Today</h1>
-                            </div>
+                            </a>
 
-                            <div className='flex items-center my-5 gap-2'>
+                            <a href='/important'  className='flex items-center my-5 gap-2'>
                                 <FaRegStar className='text-2xl' /><h1>Important</h1>
-                            </div>
+                            </a>
 
-                            <div className='flex items-center my-5 gap-2'>
+                            <a href='/planned' className='flex items-center my-5 gap-2'>
                                 <FiMap className='text-2xl' /><h1>Planned</h1>
-                            </div>
+                            </a>
 
-                            <div className='flex items-center my-5 gap-2'>
+                            <a href='/assigned' className='flex items-center my-5 gap-2'>
                                 <MdAssignmentInd className='text-2xl' /><h1>Assigned to me</h1>
-                            </div>
+                            </a>
                         </div>
                     </div>
 

@@ -43,7 +43,7 @@ const Todos = ({ viewMode, searchTerm, showSideBar }) => {
             <div className="flex h-full text-white gap-x-3">
 
                 {showSideBar && (
-                    <div className='relative bg-[#232323] w-1/3 h-[93.4svh] transition-all duration-300'>
+                    <div className='relative bg-[#232323] w-1/3 h-[100svh] transition-all duration-300'>
                         <SideBar />
                     </div>
                 )}

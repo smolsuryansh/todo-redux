@@ -25,28 +25,40 @@ const Navbar = ({ toggleViewMode, viewMode, onSearch, toggleSideBar, showSideBar
   return (
     <div className='bg-[#1f1f1f] flex justify-between items-center px-[5rem] py-4 text-2xl text-white'>
 
+        {/* SideBar etc */}
         <div className='flex justify-start items-center gap-6'>
+
             <div onClick={toggleSideBar} className='cursor-pointer'>
               <FaBars className={`${showSideBar ? 'rotate-90' : ''} transition-all duration-300`}/>
             </div>
             <span className='text-green-600'>DoIt</span>
+
         </div>
 
         <div className='flex justify-end items-center gap-6'>
+
+            {/* Search */}
             <div className='flex items-center justify-between gap-6'>
+
               <div className={`${showSearch ? 'opacity-100' : 'opacity-0'}  transition-all duration-300`}>
-                <input type='text' placeholder='Search..' onChange={handleInputChange} className='bg-[#2F3630] px-4 rounded-lg border border-transparent focus:outline-none focus:border-green-600'/>
+                <input type='text' placeholder='Search..' onChange={handleInputChange} className='bg-[#2F3630] px-4 rounded-lg border border-transparent focus:outline-none focus:border-green-600 placeholder:text-lg placeholder:text-left text-lg'/>
               </div>
               <FiSearch onClick={toggleSearch} className={`cursor-pointer ${showSearch ? 'text-green-600' : ''}`} />
+
             </div>
+
+            {/* ViewMode */}
             <div onClick={toggleViewMode} className='cursor-pointer'>
                 {viewMode === 'list' ? <IoGridOutline /> : <FaList />}
             </div>
+
+            {/* Theme */}
             <div className={`cursor-pointer`}>
               <div onClick={() => dispatch(toggleTheme())}>
                 {theme === 'dark' ? <GoMoon /> : <MdOutlineWbSunny />}
               </div>
             </div>
+
         </div>
 
     </div>
